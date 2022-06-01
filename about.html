@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +13,7 @@
     <script src="https://kit.fontawesome.com/3ae270f151.js" crossorigin="anonymous"></script>
     <title>Pear</title>
 </head>
-
 <body>
-
-
-    <div class="text-center mt-5 mb-5">
-        <img src="imgs/pearlogo.png" alt="pear logo">
-        <h6 class="mt-3">Quality phones, Quality prices</h6>
-    </div>
-    <!--NAVBAR-->
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -31,7 +22,7 @@
             <div class="navbar-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pearphone 6</a>
@@ -43,54 +34,80 @@
             </div>
         </div>  
     </nav>
+    <style>
 
-    <!--Grid system-->
-    <div class="text-center mt-5">
-        <h1>Popular Phones</h1>
-        <hr class="mt-3" style="width: 25vw; margin: auto;">
-    </div>
+    .carousel-inner img {
+        width: 200px; /* Set width to 100% */
+        min-height:200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+    </style>
 
-    <div class="container-sm justify-content-center mt-5">
-        <div class="row">
-            <div class="col-md">
-                <div class="card text-center" style="width: 15rem;">
-                    <img src="imgs/pearphone7.jpg" class="card-img-top" alt="Pearphone7">
-                    <div class="card-body">
-                        <h5 class="card-title">Pear Phone 7</h5>
-                        <p class="card-text">"Pear really outdid themselves this year, this phone will crush the
-                            competition!" -<i>Elias Lindvall</i></p>
-                        <a href="#" class="btn btn-outline-secondary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card text-center" style="width: 15rem;">
-                    <img src="imgs/pearphone7.jpg" class="card-img-top" alt="Pearphone7">
-                    <div class="card-body">
-                        <h5 class="card-title">Pear Phone 7</h5>
-                        <h6 class="card-subtitle">$799</h3>
-                        <p class="card-text mt-1">"Pear really outdid themselves this year, this phone will crush the
-                            competition!" -<i>Elias Lindvall</i></p>
-                        <a href="#" class="btn btn-outline-secondary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card text-center" style="width: 15rem;">
-                    <img src="imgs/pearphone6.png" class="card-img-top mx-auto" alt="Pearphone7" style="width: 10rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Pear Phone 6s<i style="font-size: x-small;"> (green edition)</i></h5>
-                        <h6 class="card-subtitle">$699</h3>
-                        <p class="card-text mt-1">"One of the best phones for its price on the market right now!" -<i>Elias Lindvall</i></p>
-                        <a href="#" class="btn btn-outline-secondary">Buy now</a>
-                    </div>
-                </div>
-            </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <br>
+        <br>
+        <br>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="imgs/pearphone6.png" alt="Image">
+            <div class="carousel-caption">
+              <h3>Pear Phone 6</h3>
+              <p></p>
+            </div>      
+          </div>
         </div>
-    </div>
-
-    <!-- FOOTER -->
     
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+      <br>
+      <br>
+      <br>
+    <div class="container text-center">    
+      <h3>Pear Phone is the worlds leading phone company in every aspect</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="imgs/pearpng.png" class="img-responsive" style="width:300px;" alt="Image">
+          
+          <p>Pear Phone is leading the innovation in design</p>
+        </div>
+        <div class="col-sm-4"> 
+          <img src="imgs/pearphone7.jpg" class="img-responsive" style="width:300px;" alt="Image">
+          <p>Pear Phone 7</p>    
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+           <p>Users say it's the best phone they have ever used.</p>
+          </div>
+          <div class="well">
+           <p></p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
     <footer class="text-center text-lg-start bg-light text-muted">
         <section>
             <div class="container text-center text-md-start mt-5">
@@ -151,5 +168,4 @@
     </footer>
 
 </body>
-
 </html>
